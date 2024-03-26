@@ -69,12 +69,12 @@ public class Model extends JPanel implements ActionListener {
 
 
     private void loadImages() {
-        down = new ImageIcon("/src/images/down.gif").getImage();
-        up = new ImageIcon("/src/images/up.gif").getImage();
-        left = new ImageIcon("/src/images/left.gif").getImage();
-        right = new ImageIcon("/src/images/right.gif").getImage();
-        ghost = new ImageIcon("/src/images/ghost.gif").getImage();
-        heart = new ImageIcon("/src/images/heart.png").getImage();
+        down = new ImageIcon("down.gif").getImage();
+        up = new ImageIcon("up.gif").getImage();
+        left = new ImageIcon("left.gif").getImage();
+        right = new ImageIcon("right.gif").getImage();
+        ghost = new ImageIcon("holmerRainbow.gif").getImage();
+        heart = new ImageIcon("heart.png").getImage();
 
     }
     private void initVariables() {
@@ -110,9 +110,9 @@ public class Model extends JPanel implements ActionListener {
 
     private void showIntroScreen(Graphics2D g2d) {
 
-        String start = "Press SPACE to start \n Use arrows to move!";
+        String start = "Press SPACE to start and Use arrows to move!";
         g2d.setColor(Color.yellow);
-        g2d.drawString(start, (screenSize)/4, 150);
+        g2d.drawString(start, (screenSize)/16, 150);
     }
 
     private void drawScore(Graphics2D g) {
